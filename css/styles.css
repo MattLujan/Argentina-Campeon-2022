@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-principal a {
+    text-decoration: none;
+    color: white;
+    height: 110px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* ------- HEADER ---------- */
+
+.nav-principal {
+    display: flex;
+    background-color: rgba(137, 202, 240);
+    top: 0;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list li {
+    font-size: 2rem;
+    margin: 20px;   
+}
+
+nav a:hover {
+    color: rgb(37, 53, 232);
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.nav-list li,
+.nav-redes-sociales li {
+    list-style: none;
+}
+
+/* -------- MAIN ---------- */
+
+main {
+    max-width: 100%;
+    /* ← AGREGADO: previene overflow */
+    width: 100%;
+    padding: 0 20px;
+    /* ← AGREGADO: espaciado lateral */
+    margin-top: 125px;
+}
+
+.section1-main-index h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.banner-principal img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-principal figcaption {
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+}
+
+.section1-main-index p {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding:20px;
+    text-align: center;
+}
+
+.section2-main-index h2 {
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.section2-main-index {
+    display: flex;
+    gap: 30px;  
+    justify-content: center;
+}
+
+.section2-main-index h3 {
+    margin:15px;
+    text-align: center;
+}
+
+.section2-main-index p {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    font-weight: 652;
+    text-align: center;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    /* ← AGREGADO: centra el video */
+}
+
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
+}
+
+/* -------- FOOTER -------- */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.nav-redes-sociales a{
+    text-decoration: none;
+}
+
+.nav-redes-sociales ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.nav-redes-sociales li {
+    padding: 15px;
+    margin: 10px;
+}
+
+.footer-logo img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.copyright {
+font-size: 2rem;
+padding: 15px 0;
+margin: 10px 0;
+}
