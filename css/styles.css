@@ -14,6 +14,8 @@ body {
     overflow-x: hidden;
 }
 
+/* ======== INDEX =========== */
+
 /* ------- HEADER ---------- */
 
 .nav-principal {
@@ -24,12 +26,14 @@ body {
     position: fixed;
     align-items: center;
     padding: 0 20px;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .nav-list {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .nav-list li {
@@ -42,8 +46,8 @@ nav a:hover {
 }
 
 header img {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 110px;
     object-fit: cover;
 }
 
@@ -89,15 +93,10 @@ main {
     text-align: center;
 }
 
-.section2-main-index h2 {
-    align-content: center;
-    margin-bottom: 20px;
-}
-
 .section2-main-index {
     display: flex;
     gap: 30px;  
-    justify-content: center;
+    align-items: center;
 }
 
 .section2-main-index h3 {
@@ -114,10 +113,10 @@ main {
 }
 
 .video-container {
-    width: 100%;
+    /* width: 100%; */
     max-width: 480px;
-    margin: 0 auto;
-    /* ← AGREGADO: centra el video */
+    margin: 5px;
+
 }
 
 .video-container iframe {
@@ -163,3 +162,202 @@ font-size: 2rem;
 padding: 15px 0;
 margin: 10px 0;
 }
+
+/* ======== FASE DE GRUPOS ======== */
+.invicto-pre-mundial h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.invicto-pre-mundial h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.invicto-pre-mundial p {
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.fotos-premundial {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fotos-premundial img {
+    height: 240px;
+    object-fit: cover;
+}
+
+.fotos-premundial figure {
+    margin-top: 20px;
+}
+
+.fotos-premundial figcaption {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.grupo-c {
+    margin: 15px;
+}
+
+.participantes-grupo-c {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.titulo-grupo-c h3 {
+    padding-bottom: 7px;
+    text-decoration: underline;
+}
+
+.titulo-grupo-c p {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.banderas-grupo-c {
+    display: flex;
+    gap: 30px;
+}
+
+.banderas-grupo-c img {
+    height: 110px;
+    
+}
+
+.resumen-partidos-grupo-c {
+    display: flex;
+}
+
+.resumen-partidos-grupo-c img {
+    height: 120px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.resumen-partidos-grupo-c h3 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.resumen-partidos-grupo-c p {
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.escudos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resultados {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.Arg-partidos-grupo-c {
+    flex: 1;
+    margin-bottom: 20px;
+    /* Separación entre las tarjetas de partidos */
+    padding: 15px;
+    /* Espacio interno para que el texto no toque el borde */
+    border-radius: 8px;
+    /* Opcional: bordes redondeados para que sea más moderno */
+}
+
+.Arg-partidos-grupo-c p{
+    font-size: 1.2rem;
+    /* margin-bottom:12px; */
+}
+
+
+/* Colores específicos */
+.border-arabia {
+    border: 2px solid green;
+}
+
+.border-mexico {
+    border: 2px solid blue;
+}
+
+.border-polonia {
+    border: 2px solid purple;
+}
+
+.resultados p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.goles-arg-ksa {
+    display: flex;
+    justify-content: space-between;
+}
+
+.goles-arg-ksa p {
+    margin-bottom: 0;
+}
+
+.gol-arabia {
+    text-align: end;
+    margin-bottom: 0;
+}
+
+.gol-arabia p {
+    margin-bottom: 0;
+}
+
+.goles-arg-mex p {
+    margin-bottom: 0;
+}
+
+.resumen-partido {
+    text-align: center;
+}
+
+.grupo-c h4 {
+    margin-top: 15px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.tabla-de-posiciones {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fila-resaltada {
+    background-color: #d8ef0b;
+    border-left: 5px solid #0c5460;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.posiciones-finales {
+    font-size: 1.3rem;
+    flex: 1;
+    text-align: center;
+}
+
+.posiciones-finales h5 {
+    margin: 10px;
+}
+
+.aclaracion-polonia {
+    flex: 1;
+    font-size: 1.2rem;
+}
+
+.aclaracion-polonia p {
+    margin: 10px;
+}
+
+
