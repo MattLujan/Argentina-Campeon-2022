@@ -361,3 +361,202 @@ margin: 10px 0;
 }
 
 
+/* ============ OCTAVOS DE FINAL =========== */
+
+.contenedor {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 130px;
+}
+
+.contenedor main {
+    flex: 3;
+    /* Ocupa 3 partes del espacio */
+    padding: 0 20px;
+    margin-top: 0;
+}
+
+.contenedor aside {
+    flex: 2;
+    background-color: #f0f8ff;
+    padding: 15px;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-right: 10px;
+    border: 2px solid rgba(137, 202, 240);
+    margin-bottom: 8px;
+}
+
+.contenedor h1{
+    text-align: end;
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+
+.contenedor h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fotos-arg-aust {
+    display: flex;
+    margin-top: 10px;
+    max-width: 791px;
+}
+
+.goles-arg-aust {
+    display: flex;
+    flex-direction: column;
+}
+
+.goles-arg-aust figure {
+    margin-bottom: 10px;
+}
+
+.foto-recortada-arg-aust {
+    width: 400px;
+}
+
+.foto-arg-aus-dibu {
+    width: 380px;
+    height: 210px;
+}
+
+.salvada-resumen-partido {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    max-width: 380px;
+}
+
+.video-arg-aust {
+    max-width: 790px;
+}
+
+.salvada-resumen-partido p{
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+
+.video-arg-aust p {
+    text-align: center;
+    margin-bottom: 4px;
+    font-size: 1.2rem;
+}
+
+.escudos-arg-aust {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.escudos-arg-aust img {
+    height: 150px;
+}
+
+.resultados-arg-aust {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.resultados-arg-aust p {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.goles-arg-australia {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    margin-left: 15px;
+}
+
+.gol-avivada-julian {
+    margin-left: 45px;
+    font-size: 1.5rem;
+}
+
+.estadisticas-arg-aust {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.posesion-arg-aust {
+    border: 2px solid blue;
+    margin-bottom: 25px;
+}
+
+.tiros-al-arco-arg-aust {
+    border: 2px solid black;
+    margin-bottom: 25px;
+}
+.fouls-arg-aust {
+    border: 2px solid green;
+    margin-bottom: 25px;
+}
+.corners-arg-aust {
+    border: 2px solid yellowgreen;
+    margin-bottom: 25px;
+}
+
+.posesion-arg-aust h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.posesion-arg-aust p {
+    font-size: 1.5rem;
+}
+
+.tiros-al-arco-arg-aust h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.tiros-al-arco-arg-aust p {
+    font-size: 1.5rem;
+}
+
+.fouls-arg-aust h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.fouls-arg-aust p{
+    font-size: 1.5rem;
+}
+
+.corners-arg-aust {
+    margin-bottom: 15px;
+}
+
+.corners-arg-aust h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.corners-arg-aust p{
+    font-size: 1.5rem;
+}
+
+.estadisticas-numeros-arg-aust {
+    display: flex;
+    justify-content: space-around;
+}
+
+.estadio-arbitro-arg-aust {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.estadio-arbitro-arg-aust span {
+    font-weight: bold;
+}
