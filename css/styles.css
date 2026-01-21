@@ -14,9 +14,9 @@ body {
     overflow-x: hidden;
 }
 
-/* ======== INDEX =========== */
+/* ============= INDEX ===================== */
 
-/* ------- HEADER ---------- */
+/* ---------- HEADER ---------- */
 
 .nav-principal {
     display: flex;
@@ -56,7 +56,7 @@ header img {
     list-style: none;
 }
 
-/* -------- MAIN ---------- */
+/* ------------ MAIN ---------- */
 
 main {
     max-width: 100%;
@@ -126,7 +126,7 @@ main {
     display: block;
 }
 
-/* -------- FOOTER -------- */
+/* ------------ FOOTER -------- */
 
 footer {
     display: flex;
@@ -163,7 +163,7 @@ padding: 15px 0;
 margin: 10px 0;
 }
 
-/* ======== FASE DE GRUPOS ======== */
+/* ======== FASE DE GRUPOS ================= */
 .invicto-pre-mundial h1 {
     text-align: center;
     text-decoration: underline;
@@ -588,8 +588,6 @@ margin: 10px 0;
 }
 
 .fotos-arg-hol {
-    /* display: flex;
-    flex-direction: column; */
     flex:2;
 }
 
@@ -694,3 +692,153 @@ margin: 10px 0;
 .estadio-arbitro-arg-hol span {
     font-weight: bold;
 }
+
+/* ============ SEMI-FINAL ================= */
+
+.foto-recortada-arg-cro {
+    width: 400px;
+    padding: 15px;
+}
+
+.fotos-arg-cro {
+    display: flex;
+    margin-top: 10px;
+    max-width: 791px;
+}
+
+.fotos-arg-cro p {
+    font-size: 1.4rem;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.festejo-final-arg-cro {
+    width: 744px;
+}
+
+.semi-arg-cro figcaption {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.escudos-arg-cro {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.escudos-arg-cro img {
+    height: 150px;
+}
+
+.resultados-arg-cro {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.resultados-arg-cro p {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.goles-arg-cro {
+    margin-left: 40px;
+    font-size: 1.3rem;
+}
+
+.estadisticas-arg-cro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.posesion-arg-cro {
+    border: 2px solid blue;
+    margin-bottom: 25px;
+}
+
+.posesion-arg-cro h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px
+}
+
+.posesion-arg-cro p {
+    font-size: 1.5rem;
+}
+
+.estadisticas-numeros-arg-cro {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tiros-al-arco-arg-cro {
+    border: 2px solid black;
+    margin-bottom: 25px;
+}
+
+.tiros-al-arco-arg-cro h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px
+}
+
+.tiros-al-arco-arg-cro p {
+    font-size: 1.5rem;
+}
+
+.fouls-arg-cro {
+    border: 2px solid lightblue;
+    margin-bottom: 25px;
+}
+
+.fouls-arg-cro h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px
+}
+
+.fouls-arg-cro p {
+    font-size: 1.5rem;
+}
+
+.corners-arg-cro {
+    border: 2px solid rgb(234, 192, 192);
+    margin-bottom: 25px;
+}
+
+.corners-arg-cro h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px
+}
+
+.corners-arg-cro p {
+    font-size: 1.5rem;
+}
+
+.estadio-arbitro-arg-cro {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.estadio-arbitro-arg-cro span {
+    font-weight: bold;
+}
+
+.video-arg-cro {
+    max-width: 745px;
+    margin-top: 10px;
+}
+
+.video-arg-cro p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* ================== FINAL ================ */
+
