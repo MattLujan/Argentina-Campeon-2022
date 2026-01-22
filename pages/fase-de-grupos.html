@@ -7,6 +7,7 @@
     <title>Argentina Campeón del Mundo 2022 | Qatar - Videos y Resúmenes</title>
     <link rel="icon" href="./images/fifa-world-cup-symbol-gold-trophy-mondial-champion-abstract-design-illustration-free-vector.ico">
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../scripts/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,8 +15,14 @@
             <a href="../index.html" class="logo-link">
                 <img src="../images/afa.png" alt="Escudo AFA - Argentina">
             </a>
+
+            <button class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         
-            <ul class="nav-list">
+            <ul class="nav-list" id="nav-list">
                 <li>
                     <a href="./fase-de-grupos.html">
                         Fase de Grupos
@@ -167,73 +174,76 @@
             </article>
 
             <hr>
-            <h4>TABLA DE POSICIONES:</h3>
+            <h4>TABLA DE POSICIONES:</h4>
 
             <article class="tabla-de-posiciones">
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>EQUIPOS</th>
-                            <th>PTS</th>
-                            <th>PJ</th>
-                            <th>PG</th>
-                            <th>PE</th>
-                            <th>PP</th>
-                            <th>GF</th>
-                            <th>GE</th>
-                            <th>DIF</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="fila-resaltada">
-                            <td>ARGENTINA</td>
-                            <td class="text-center">6</td>
-                            <td class="text-center">3</td>
-                            <td class="text-center">2</td>
-                            <td class="text-center">0</td>
-                            <td class="text-center">1</td>
-                            <td class="text-center">5</td>
-                            <td class="text-center">2</td>
-                            <td class="text-center">+3</td>
-                        </tr>
-                        <tr class= "fila-resaltada">
-                            <td>POLONIA</td>
-                            <td class="text-center">4</td>
-                            <td class="text-center">3</td>
-                            <td class="text-center">1</td>
-                            <td class="text-center">1</td>
-                            <td class="text-center">1</td>
-                            <td class="text-center">2</td>
-                            <td class="text-center">2</td>
-                            <td class="text-center">0</td>
-                        </tr>
-                        <tr>
-                            <td>MEXICO</td>
-                            <td class="text-center">4</td>
-                            <td class="text-center">3</td>
-                            <td class="text-center">1</td>
-                            <td class="text-center">1</td>
-                            <td class="text-center">1</td>
-                            <td class="text-center">2</td>
-                            <td class="text-center">3</td>
-                            <td class="text-center">-1</td>
-                        </tr>
-                        <tr>
-                            <td>ARABIA SAUDITA</td>
-                            <td class="text-center">3</td>
-                            <td class="text-center">3</td>
-                            <td class="text-center">1</td>
-                            <td class="text-center">0</td>
-                            <td class="text-center">2</td>
-                            <td class="text-center">3</td>
-                            <td class="text-center">5</td>
-                            <td class="text-center">-2</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-container">
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>EQUIPOS</th>
+                                <th>PTS</th>
+                                <th>PJ</th>
+                                <th>PG</th>
+                                <th>PE</th>
+                                <th>PP</th>
+                                <th>GF</th>
+                                <th>GE</th>
+                                <th>DIF</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="fila-resaltada">
+                                <td>ARGENTINA</td>
+                                <td class="text-center">6</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">0</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">5</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">+3</td>
+                            </tr>
+                            <tr class="fila-resaltada">
+                                <td>POLONIA</td>
+                                <td class="text-center">4</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">0</td>
+                            </tr>
+                            <tr>
+                                <td>MEXICO</td>
+                                <td class="text-center">4</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">-1</td>
+                            </tr>
+                            <tr>
+                                <td>ARABIA SAUDITA</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">1</td>
+                                <td class="text-center">0</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">5</td>
+                                <td class="text-center">-2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
                     
                 <div class="posiciones-finales">
-                    <h5>Clasificados a Octavos de Final:</h4>
+                    <h5>Clasificados a Octavos de Final:</h5>
                     <p>1- ARGENTINA</p>
                     <p>2- POLONIA</p>
                  </div>

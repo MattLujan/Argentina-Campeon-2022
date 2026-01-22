@@ -56,6 +56,23 @@ header img {
     list-style: none;
 }
 
+.menu-toggle {
+    display: none;
+    /* Escondido en PC */
+    flex-direction: column;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    gap: 5px;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+
 /* ------------ MAIN ---------- */
 
 main {
@@ -97,6 +114,7 @@ main {
     display: flex;
     gap: 30px;  
     align-items: center;
+    justify-content: center;
 }
 
 .section2-main-index h3 {
@@ -281,10 +299,12 @@ margin: 10px 0;
 .border-arabia {
     border: 2px solid green;
     background-color: #f0f8ff;
+    margin-right: 10px;
 }
 
 .border-mexico {
     border: 2px solid blue;
+    margin-right: 10px;
 }
 
 .border-polonia {
@@ -327,6 +347,12 @@ margin: 10px 0;
     margin-top: 15px;
     margin-left: 100px;
     margin-bottom: 10px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    /* Esto crea la barrita de scroll horizontal solo si la tabla no entra */
 }
 
 .tabla-de-posiciones {
@@ -1002,3 +1028,275 @@ margin: 10px 0;
 }
 
 
+/* --------SECTION MEDIA QUERIES---------- */
+/* Media Query para tablets y celulares */
+@media (max-width: 768px) {
+
+
+    .section2-main-index {
+        flex-direction: column;
+        /* Esto hace que los videos se pongan uno abajo del otro */
+        align-items: center;
+    }
+
+    .video-container {
+        width: 100%;
+        /* El contenedor ocupa todo el ancho disponible */
+        max-width: 100%;
+    }
+
+        .menu-toggle {
+            display: flex;
+            /* Aparece en celular */
+        }
+    
+        .nav-list {
+            display: none;
+            /* Escondemos la lista horizontal */
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+            background-color: rgba(137, 202, 240, 0.95);
+            position: absolute;
+            top: 110px;
+            /* Debajo del header */
+            left: 0;
+        }
+    
+        /* Esta clase la activaremos con JS */
+        .nav-list.active {
+            display: flex;
+        }
+        .section1-main-index h1 {
+            font-size: 1.5rem;
+            /* Título más acorde al celular */
+        }
+    
+        .section1-main-index p,
+        .copyright {
+            font-size: 1.1rem;
+            /* El texto ya no es gigante */
+            padding: 10px;
+        }
+    
+        .nav-list li {
+            font-size: 1.2rem;
+            /* Achicamos los links del menú sandwich */
+            margin: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            /* Una línea sutil para separar */
+        }
+    
+        .nav-list li:last-child {
+            border-bottom: none;
+        }
+
+                footer {
+                    flex-direction: column;
+                    /* Apila los elementos verticalmente */
+                    align-items: center;
+                    /* Centra todo el contenido */
+                    gap: 20px;
+                    /* Espacio entre redes, logo y copyright */
+                }
+        
+                .nav-redes-sociales ul {
+                    flex-direction: row;
+                    /* Mantiene las redes sociales en una línea (horizontal) */
+                    flex-wrap: wrap;
+                    /* Si no entran, que bajen */
+                    justify-content: center;
+                    padding: 0;
+                }
+        
+                .nav-redes-sociales li {
+                    margin: 5px;
+                    /* Achicamos el margen que tenías de 10px */
+                    padding: 5px;
+                }
+        
+                .copyright {
+                    font-size: 1rem;
+                    /* Un tamaño más real para móvil */
+                    order: 3;
+                    /* Nos aseguramos que quede al final */
+                }
+
+        /* --- AJUSTES FASE DE GRUPOS (MÓVIL) --- */
+    
+        /* 1. Las fotos de Copa América y Finalíssima se ponen una abajo de otra */
+        .fotos-premundial {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .fotos-premundial img {
+            width: 100%;
+            /* Ocupan todo el ancho del cel */
+            height: auto;
+            margin-bottom: 15px;
+        }
+    
+        /* 2. Las banderas del grupo C */
+        .banderas-grupo-c {
+            flex-wrap: wrap;
+            /* Para que bajen si no entran */
+            justify-content: center;
+            gap: 10px;
+        }
+    
+        .banderas-grupo-c img {
+            height: 60px;
+            /* Más chicas para celular */
+        }
+    
+        /* 3. Las tarjetas de partidos (Arabia, México, Polonia) */
+        .resumen-partidos-grupo-c {
+            flex-direction: column;
+            /* Fundamental: se apilan */
+        }
+    
+        .Arg-partidos-grupo-c {
+            margin: 10px 0;
+            border-radius: 20px;
+            /* Reducimos el radio para que no coma tanto espacio */
+        }
+    
+        /* 4. La Tabla de Posiciones (El truco del scroll) */
+        .tabla-de-posiciones {
+            flex-direction: column;
+            /* Apila la tabla y la aclaración de Polonia */
+            align-items: center;
+        }
+    
+        /* Agregamos scroll horizontal a la tabla para que no se achique de más */
+        article.tabla-de-posiciones {
+            overflow-x: auto;
+            display: block;
+            /* Cambiamos a block para que el overflow funcione */
+            width: 100%;
+        }
+    
+        table {
+            min-width: 600px;
+            /* Obligamos a la tabla a mantener un tamaño legible */
+            margin-bottom: 20px;
+        }
+    
+        /* 5. Ajustes de texto para móvil */
+        .invicto-pre-mundial p,
+        .titulo-grupo-c p,
+        .aclaracion-polonia p {
+            font-size: 1.1rem;
+            /* Bajamos el tamaño que era muy grande */
+            text-align: left;
+        }
+    
+        .participantes-grupo-c {
+            flex-direction: column;
+            text-align: center;
+        }
+        /* AJUSTE OCTAVOS, CUARTOS Y FINAL */
+        .contenedor {
+            flex-direction: column;
+            /* El aside de estadísticas pasa abajo del contenido principal */
+            margin-top: 100px;
+        }
+    
+        .contenedor aside {
+            margin-right: 0;
+            width: 100%;
+        }
+    
+        .batalla-lusail-y-fotos,
+        .todo-acerca-de-la-final,
+        .ficha-resumen-arg-hol {
+            flex-direction: column;
+        }
+    
+        .messi-topo-yiyo,
+        .que-miras-bobo,
+        .tricampeon-del-mundo img {
+            width: 100%;
+            /* Las fotos grandes se adaptan al ancho del celu */
+            height: auto;
+        }
+        /* --- AJUSTES OCTAVOS DE FINAL (MÓVIL) --- */
+    
+        /* 1. Hacemos que el main y el aside ocupen todo el ancho y se apilen */
+        .contenedor {
+            flex-direction: column;
+            margin-top: 100px;
+            /* Reducimos un poco el margen superior */
+        }
+    
+        .contenedor main,
+        .contenedor aside {
+            width: 100%;
+            padding: 10px;
+            flex: none;
+            /* Quitamos el flex: 3 y flex: 2 */
+        }
+    
+        /* 2. Ajustamos la sección de fotos (Messi, Julián y Dibu) */
+        .fotos-arg-aust {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .foto-recortada-arg-aust,
+        .foto-arg-aus-dibu {
+            width: 100%;
+            /* Las fotos ahora se adaptan al ancho del celular */
+            height: auto;
+            max-width: 100%;
+        }
+    
+        .salvada-resumen-partido {
+            margin-left: 0;
+            max-width: 100%;
+            margin-top: 15px;
+        }
+    
+        .salvada-resumen-partido p {
+            font-size: 1.1rem;
+            /* Texto más legible en pantallas chicas */
+            margin-left: 0;
+        }
+    
+        /* 3. Ajustamos el video */
+        .video-arg-aust iframe {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
+    
+        /* 4. Ajustes del Aside (Ficha del partido) */
+        .contenedor aside {
+            margin-top: 30px;
+            margin-right: 0;
+            border-radius: 20px;
+            /* Menos redondeado para aprovechar espacio */
+        }
+    
+        .escudos-arg-aust img {
+            height: 80px;
+            /* Escudos más chicos en el celular */
+        }
+    
+        .resultados-arg-aust p {
+            font-size: 1.8rem;
+        }
+    
+        .estadisticas-numeros-arg-aust p,
+        .estadio-arbitro-arg-aust {
+            font-size: 1.1rem;
+        }
+    
+        /* 5. Alineación del título */
+        .contenedor h1 {
+            text-align: center;
+            /* En móvil queda mejor centrado */
+            font-size: 1.8rem;
+        }
+}
