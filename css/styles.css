@@ -1299,4 +1299,326 @@ margin: 10px 0;
             /* En móvil queda mejor centrado */
             font-size: 1.8rem;
         }
+    
+        /* --- AJUSTES CUARTOS DE FINAL (MÓVIL) --- */
+    
+        /* 1. Título y descripción */
+        .h1-cuartos-f {
+            font-size: 1.8rem;
+            margin-top: 20px;
+        }
+    
+        .descripcion-batalla-lusail p {
+            font-size: 1.1rem;
+            /* Bajamos el 1.7rem que era mucho para cel */
+            margin-right: 0;
+            text-align: left;
+        }
+    
+        /* 2. Fotos de Messi (Topo Gigio y Bobo) */
+        .batalla-lusail-y-fotos {
+            flex-direction: column;
+        }
+    
+        .messi-topo-yiyo,
+        .que-miras-bobo {
+            width: 100%;
+            height: auto;
+        }
+    
+        /* 3. Ficha técnica (Escudos y resultados) */
+        .ficha-resumen-arg-hol {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .ficha-resumen-arg-hol .escudos-goles-arg-hol {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    
+        .escudos-arg-hol img {
+            height: 80px;
+            /* Escudos más proporcionados */
+        }
+    
+        .resultados-arg-hol p {
+            font-size: 1.8rem;
+        }
+    
+        /* 4. Foto de la pelea y Video */
+        .partido-caliente-arg-hol {
+            width: 100%;
+            height: auto;
+            margin-left: 0;
+            /* Quitamos el margen de 28px */
+        }
+    
+        .ficha-resumen-arg-hol figcaption {
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+    
+        .video-arg-hol {
+            width: 100%;
+        }
+    
+        .video-arg-hol iframe {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
+
+                /* Corrección de alineación de resultados en Cuartos */
+                .escudos-arg-hol {
+                    width: 100%;
+                    max-width: 400px;
+                    /* Limitamos el ancho para que no se separen tanto en tablets */
+                    margin: 0 auto 10px auto;
+                    /* Centramos el bloque */
+                }
+        
+                .resultados-arg-hol {
+                    width: 100%;
+                    max-width: 400px;
+                    margin: 0 auto 20px auto;
+                    /* Centramos el bloque para que coincida con los escudos */
+                    justify-content: space-between;
+                    /* En vez de space-around, para que queden en los extremos */
+                }
+        
+                .resultados-arg-hol p {
+                    width: 150px;
+                    /* Le damos un ancho fijo a los números similar al de los escudos */
+                    text-align: center;
+                }
+        
+                /* Ajuste para que los goles también sigan la línea */
+                .goles-arg-hol {
+                    width: 100%;
+                    max-width: 400px;
+                    margin: 0 auto;
+                    justify-content: space-between;
+                }
+        /* --- AJUSTES SEMIFINAL (MÓVIL) --- */
+    
+        /* 1. Ajuste de la sección de Julián (Texto + Foto) */
+        .fotos-arg-cro {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .fotos-arg-cro p {
+            font-size: 1.1rem;
+            margin-left: 0;
+            margin-bottom: 15px;
+        }
+    
+        .foto-recortada-arg-cro {
+            width: 100% !important;
+            /* Forzamos a que ocupe el ancho del cel */
+            height: auto;
+            padding: 0;
+            /* Quitamos el padding de 15px para ganar espacio */
+        }
+    
+        /* 2. Foto del festejo final */
+        .festejo-final-arg-cro {
+            width: 100%;
+            height: auto;
+        }
+    
+        .semi-arg-cro figcaption {
+            font-size: 1rem;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+    
+        /* 3. Video de la Semifinal */
+        .video-arg-cro {
+            width: 100%;
+        }
+    
+        .video-arg-cro iframe {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
+    
+        /* 4. Alineación de Escudos y Resultados (Aplicando la misma lógica de Cuartos) */
+        .escudos-arg-cro,
+        .resultados-arg-cro,
+        .goles-arg-cro {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+    
+        .escudos-arg-cro img {
+            height: 80px;
+        }
+    
+        .resultados-arg-cro p {
+            font-size: 1.8rem;
+            width: 80px;
+            text-align: center;
+        }
+    
+        .goles-arg-cro {
+            text-align: center;
+            margin-left: 0;
+            /* Quitamos el margin-left de 40px */
+            display: block;
+            /* Para que los goles se apilen uno abajo de otro */
+        }
+    
+        .estadisticas-numeros-arg-cro p {
+            font-size: 1.2rem;
+        }
+        /* 1. Mejora para el aside pegado a los bordes */
+    .contenedor aside {
+        width: 92%; /* Dejamos un pequeño aire a los costados */
+        margin: 30px auto; /* El 'auto' lo centra horizontalmente */
+        padding: 20px;
+    }
+
+    /* 2. Alineación precisa de goles en Semifinal */
+    .goles-arg-cro {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column; /* Apila los goles */
+        align-items: flex-start; /* Los alinea a la izquierda (bajo Argentina) */
+        padding-left: 10px; /* Ajuste fino para que coincida con el escudo */
+    }
+
+    .goles-arg-cro p {
+        font-size: 1.1rem;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+        /* 1. Mejora para el aside pegado a los bordes */
+        .contenedor aside {
+            width: 92%;
+            /* Dejamos un pequeño aire a los costados */
+            margin: 30px auto;
+            /* El 'auto' lo centra horizontalmente */
+            padding: 20px;
+        }
+    
+        /* 2. Alineación precisa de goles en Semifinal */
+        .goles-arg-cro {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px auto;
+            display: flex;
+            flex-direction: column;
+            /* Apila los goles */
+            align-items: flex-start;
+            /* Los alinea a la izquierda (bajo Argentina) */
+            padding-left: 10px;
+            /* Ajuste fino para que coincida con el escudo */
+        }
+    
+        .goles-arg-cro p {
+            font-size: 1.1rem;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+    
+        /* --- AJUSTES FINAL (MÓVIL) --- */
+    
+        /* 1. Estructura principal de la final */
+        .todo-acerca-de-la-final {
+            flex-direction: column;
+        }
+    
+        .relato-de-la-final-y-video p {
+            font-size: 1.1rem;
+            margin-right: 0;
+            text-align: left;
+        }
+    
+        /* 2. Galería de fotos de los goles */
+        .fotos-goles-arg-fra {
+            flex-direction: column;
+            /* Las fotos se apilan */
+            align-items: center;
+            padding: 10px 0;
+        }
+    
+        .fotos-goles-arg-fra img {
+            width: 100%;
+            /* Ocupan todo el ancho */
+            height: auto;
+            margin-bottom: 10px;
+        }
+    
+        /* 3. Ficha del partido y resultados */
+        .ficha-partido-final {
+            width: 92%;
+            margin: 25px auto;
+            padding: 15px;
+        }
+    
+        .escudos-arg-fra,
+        .resultados-arg-fra {
+            width: 100%;
+            max-width: 320px;
+            margin: 0 auto 10px auto;
+            justify-content: space-between;
+        }
+    
+        .escudos-arg-fra img {
+            height: 70px;
+            /* Escudos un poco más chicos */
+        }
+    
+        .resultados-arg-fra p {
+            font-size: 1.8rem;
+        }
+    
+        /* 4. Alineación de Goles y Penales */
+        .goles-arg-fra,
+        .definicion-penales-arg-fra {
+            width: 100%;
+            max-width: 320px;
+            margin: 0 auto;
+            justify-content: space-between;
+            font-size: 1rem;
+        }
+    
+        /* Reset de márgenes específicos que tenías en PC */
+        .gol-mbappe-2a1,
+        .gol-mbappe-2a2,
+        .penales-francia {
+            margin-right: 0;
+            text-align: right;
+        }
+    
+        .h3-penales-arg-fra {
+            font-size: 1.3rem;
+            margin: 15px 0;
+        }
+    
+        /* 5. Foto del Tricampeón y Video */
+        .tricampeon-del-mundo img {
+            width: 100%;
+            height: auto;
+        }
+    
+        .video-arg-fra iframe {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
+    
+        .estadio-arbitro-arg-fra {
+            font-size: 1.1rem;
+        }
 }
